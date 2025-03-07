@@ -13,8 +13,13 @@ def csv_to_list(file_path):
 
 file_path = "SalesData.csv"  
 data = csv_to_list(file_path)
-print(data)  # Output the list
 
+
+def average(data):
+    for rows in data:
+        print(rows[1:] if number.isdigit() else number for number in rows)
+
+average(data)
 
 
 
